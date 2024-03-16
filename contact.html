@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact us - ActivGreat.com</title>
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+  <link rel="manifest" href="fav/site.webmanifest">
+</head>
+<body>
+	<nav id="navbar">
+    <div class="logo-canvas">
+      <div class="logo">
+        <a href="index.html">
+          <img src="sources/ag-logo.png" alt="">
+        </a>
+        
+      </div>
+    </div>
+    <div class="leads">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li> <a href="about.html">About Us</a></li>
+        <li id="services"><a onmouseover="showMenu()" onmouseleave="hideMenu()">Services</a></li>
+      
+
+      </ul>
+    </div>
+    <div class="sub-menu-wrap" id="subMenu" onmouseover="showMenu()" onmouseleave="hideMenu()">
+      <div class="sub-menu">
+        <ul>
+          <a href="services/social-ads.html"><li>Social Ads</li></a>
+          <a href="services/google-ads.html"><li>Google Ads</li></a>
+          <a href="services/email.html"><li>Email Marketing</li></a>
+          <a href="services/copywriting.html"><li>Copywriting</li></a>
+          <a href="services/seo.html"><li>SEO</li></a>
+          <a href="services/webdev.html"><li>Web Development</li></a>
+          <a href="services/content-creation.html"><li>Content Creation</li></a>
+          <a href="services/sm-management.html"><li>SM Management</li></a>
+          <a href="services/uxui.html"><li>UX/UI</li></a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="contact-page">
+    <h1>Contact us</h1>
+    <div class="contact-form">
+      <form action="https://formsubmit.co/anaszwawi20@gmail.com" method="POST">
+        
+        <div class="form-wrapper">
+          <div class="form-left">
+            <h2>Send Us a Message</h2>
+            <div class="call">
+          <p>Or Call us Directly</p>
+          <div>
+            (+216) 21 78 34 44
+          </div>
+        </div>
+            <input type="text" name="name" id="" placeholder="Your name">
+            <input type="email" name="email" id="email" placeholder="Your email">
+            <input type="tel" name="number" id="phone" placeholder="Phone number">
+          </div>
+          <div class="form-right">
+            <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Your message"></textarea>
+          </div>
+        </div>
+        <input type="submit" value="Send a message" class="btn">
+      </form>
+      <!-- <div class="alert alert-info" style="display: none;"></div> -->
+    </div>
+  </div>
+
+  <section class="block footer">
+    <div class="footer-top">
+      <div class="outro">
+        <div class="logo2">
+          <img src="sources/logo.png" alt="">
+          <span>
+            <h3>ACTIVGREAT</h3>
+            <h4>Social Media Marketing Co.</h4>
+          </span>
+        </div>
+        <p class="transparent">
+          We're a growth agency that is  dedicated to helping scale your business.
+        </p>
+      </div>
+      <div class="outro-services transparent">
+        <section class="col-1">
+          <ul>
+            <li><a href="services/social-ads.html">Social Ads</a></li>
+            <li><a href="services/google-ads.html">Google Ads</a></li>
+            <li><a href="services/email.html">E-Mail Marketing</a></li>
+            <li><a href="services/copywriting.html">Copywriting</a></li>
+            <li><a href="services/seo.html">SEO</a></li>
+            <li><a href="services/webdev.html">Web Development</a></li>
+          </ul>
+        </section>
+        <section class="col-2">
+          <ul>
+            <li><a href="services/content-creattion.html">Content Creation</a></li>
+            <li><a href="services/sm-management.html">SM Management</a></li>
+            <li><a href="services/uxui.html">UX/UI</a></li>
+          </ul>
+        </section>
+        <section class="col-3">
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <div class="footer-bottom transparent">
+      <div class="socials">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="sources/socials/7639644_fb_social media_facebook_facebook logo_social network_icon.svg" alt="">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="sources/socials/8134635_insta_logo_instagram_icon.svg" alt="">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+          <img src="sources/socials/5282542_linkedin_network_social network_linkedin logo_icon.svg" alt="">
+        </a>
+      </div>
+      <p>© 2022 ACTIVGREAT. All rights reserved.</p>
+    </div>
+  </section>
+  <script src="js/contact-menu.js"></script>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      preferredCountries: ["tn", "tr", "fr", "de"],
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+    const info = document.querySelector(".alert-info");
+
+    function process(event) {
+    event.preventDefault();
+
+    const phoneNumber = phoneInput.getNumber();
+
+    info.style.display = "";
+    info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+    }
+  </script>
+</body>
+</html>
