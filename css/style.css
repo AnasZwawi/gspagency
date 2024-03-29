@@ -78,7 +78,8 @@ body {
 #navbar .logo img {
   width: 55px;
   position: relative;
-  bottom: 10px;
+  
+  bottom: 5px;
   left: 10px;
 }
 
@@ -933,7 +934,7 @@ width: 60vw;
 }
 
 .logo2 img{
-  width: 60px;
+  width: 150px;
 }
 
 .logo2 span{
@@ -3758,6 +3759,7 @@ width: 60vw;
   margin: 6rem auto 6rem;
   width: 100vw;
   z-index: 999;
+  height: max-content;
 }
 
 .freecall h1 {
@@ -4853,6 +4855,13 @@ nav
 
   .outro-services{
     border: none;
+  }
+
+  @media (max-width:640px){
+    .outro-services{
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .footer-top {
